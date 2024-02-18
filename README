@@ -1,0 +1,19 @@
+When Can Collaborative Filtering Be Used? (From https://realpython.com/build-recommendation-engine-collaborative-filtering/)
+
+Collaborative filtering works around the interactions that users have with items. These interactions can help find patterns that the data about the items or users itself can’t. Here are some points that can help you decide if collaborative filtering can be used:
+
+Collaborative filtering doesn’t require features about the items or users to be known. It is suited for a set of different types of items, for example, a supermarket’s inventory where items of various categories can be added. In a set of similar items such as that of a bookstore, though, known features like writers and genres can be useful and might benefit from content-based or hybrid approaches.
+
+Collaborative filtering can help recommenders to not overspecialize in a user’s profile and recommend items that are completely different from what they have seen before. If you want your recommender to not suggest a pair of sneakers to someone who just bought another similar pair of sneakers, then try to add collaborative filtering to your recommender spell.
+
+Although collaborative Filtering is very commonly used in recommenders, some of the challenges that are faced while using it are the following:
+
+Collaborative filtering can lead to some problems like cold start for new items that are added to the list. Until someone rates them, they don’t get recommended.
+
+Data sparsity can affect the quality of user-based recommenders and also add to the cold start problem mentioned above.
+
+Scaling can be a challenge for growing datasets as the complexity can become too large. Item-based recommenders are faster than user-based when the dataset is large.
+
+With a straightforward implementation, you might observe that the recommendations tend to be already popular, and the items from the long tail section might get ignored.
+
+With every type of recommender algorithm having its own list of pros and cons, it’s usually a hybrid recommender that comes to the rescue. The benefits of multiple algorithms working together or in a pipeline can help you set up more accurate recommenders. In fact, the solution of the winner of the Netflix prize was also a complex mix of multiple algorithms.
